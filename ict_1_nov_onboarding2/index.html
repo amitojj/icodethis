@@ -1,43 +1,160 @@
 <!DOCTYPE html>
-<html lang="En">
+<html lang="En" class="m-0 p-0 box-border">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="description" content="Practice web development">
-  <meta name="author" content="Amit Malik">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900;1000&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Onboarding 2 </title>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-    }
-    .upper{
-        border-radius: 0% 0% 43% 57% / 0% 0% 25% 32%;
-    }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Practice web development">
+    <meta name="author" content="Amit Malik">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900;1000&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Onboarding 2 </title>
 </head>
-
-<body class="w-screen h-screen flex justify-center items-center bg-blue-200 " style="font-family:'Poppins', sans-serif;">
-<div class="card w-80 h-[600px] bg-white flex flex-col">
-    <div class="upper w-full h-[300px] bg-cyan-100/40  flex justify-center flex-col items-center gap-5">
-        <img src="https://cdn-icons-png.flaticon.com/512/1020/1020586.png" alt="" class="w-1/3">
-        <h3 class="text-xl w-1/2 text-center " style="color: royalblue; font-weight: 700;">Find Campings near you.</h3>
-    </div>
-    <div class="lower flex flex-col justify-center items-center grow p-3">
-        <div class="desc text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nostrum architecto minus voluptatem!</div>
-        <div class="dot_cont flex">
-            <div class="w-1.5 h-1.5 rounded-full bg-slate-400"></div>
-        </div>
-    </div>
+<!-- ─── Body ────────────────────────────────────────────────────────── ✣ ─ -->
+<body class="w-screen h-screen flex justify-center gap-5 items-center bg-blue-200 " style="font-family:'Poppins', sans-serif;">  
     
-</div>
-
+    
+    <!-- ─── Card 1 Start ──────────────────────────────────────────────── -->
+    <div class="card w-80 h-[600px] bg-white flex flex-col">
+        
+        <!-- ─── Upper Half ──────────────────────────────────────── -->
+        <div class="upper w-full h-[300px] bg-cyan-100/40  flex justify-center flex-col items-center gap-5 rounded-fancy">
+            <img src="https://cdn-icons-png.flaticon.com/512/1020/1020586.png" alt="" class="w-1/3">
+            <h3 class="text-xl w-1/2 text-center " style="color: royalblue; font-weight: 700;">Find Campings near you.</h3>
+        </div>
+        <!-- ─── Uper Half Ends ──────────────────────────────────── -->
+        
+        <!-- ─── Lovwer Half start ─────────────────────────────────────────────────── ✣ ─ -->
+        <div class="lower flex flex-col justify-around items-center grow p-3">
+            <!-- ─── Text ────────────────────────────────── ✣ ─ -->
+            <div class="desc text-center">card1 ipsum dolor sit amet consectetur, adipisicing elit. Ab nostrum architecto minus voluptatem!</div>
+            <!-- ─── Dots ────────────────────────────────────────── ✣ ─ -->
+            <div class="dot_cont flex gap-1">
+                <div class="w-6 h-2 rounded-full bg-blue-600"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+            </div>
+            <!-- ─── Buttons ─────────────────────────────────────── ✣ ─ -->
+            <div class="flex justify-center gap-2">
+                <button class="w-28 h-11 bg-slate-400 text-white rounded-full skipBtn">Skip</button>
+                <button class="w-28 h-11 bg-blue-600 text-white rounded-full next-button" id="nextBtn1">Next</button>
+            </div>
+            <!-- ─── Lower Half Ends ─────────────────────────────── ✣ ─ -->
+        </div>
+        <!-- ─── Card 1 Ends ───────────────────────────────────────────────── -->
+    </div>
+    <!-- ─────────────────────────────────────────────────────────────────── ✣ ─ -->
+    
+    
+    
+    <!-- ─── Card2 Start ──────────────────────────────────────────────── -->
+    <div class="card w-80 h-[600px] bg-white flex flex-col hidden">
+        
+        <!-- ─── Upper Half ──────────────────────────────────────── -->
+        <div class="upper w-full h-[300px] bg-cyan-100/40  flex justify-center flex-col items-center gap-5 rounded-fancy">
+            <img src="https://cdn-icons-png.flaticon.com/512/1020/1020586.png" alt="" class="w-1/3">
+            <h3 class="text-xl w-1/2 text-center " style="color: royalblue; font-weight: 700;">Find Campings near you.</h3>
+        </div>
+        <!-- ─── Uper Half Ends ──────────────────────────────────── -->
+        
+        <!-- ─── Lovwer Half start ─────────────────────────────────────────────────── ✣ ─ -->
+        <div class="lower flex flex-col justify-around items-center grow p-3">
+            <!-- ─── Text ────────────────────────────────── ✣ ─ -->
+            <div class="desc text-center">card2 ipsum dolor sit amet consectetur, adipisicing elit. Ab nostrum architecto minus voluptatem!</div>
+            <!-- ─── Dots ────────────────────────────────────────── ✣ ─ -->
+            <div class="dot_cont flex gap-1">
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+                <div class="w-6 h-2 rounded-full bg-blue-600"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+            </div>
+            <!-- ─── Buttons ─────────────────────────────────────── ✣ ─ -->
+            <div class="flex justify-center gap-2">
+                <button class="w-28 h-11 bg-slate-400 text-white rounded-full skipBtn">Skip</button>
+                <button class="w-28 h-11 bg-blue-600 text-white rounded-full next-button " id="nextBtn2">Next</button>
+            </div>
+            <!-- ─── Lower Half Ends ─────────────────────────────── ✣ ─ -->
+        </div>
+        <!-- ─── Card2 Ends ───────────────────────────────────────────────── -->
+    </div>
+    <!-- ─────────────────────────────────────────────────────────────────── ✣ ─ -->
+    
+    
+    
+    
+    
+    <!-- ─── Card3 Start ──────────────────────────────────────────────── -->
+    <div class="card w-80 h-[600px] bg-white flex hidden flex-col">
+        
+        <!-- ─── Upper Half ──────────────────────────────────────── -->
+        <div class="upper w-full h-[300px] bg-cyan-100/40  flex justify-center flex-col items-center gap-5 rounded-fancy">
+            <img src="https://cdn-icons-png.flaticon.com/512/1020/1020586.png" alt="" class="w-1/3">
+            <h3 class="text-xl w-1/2 text-center " style="color: royalblue; font-weight: 700;">Find Campings near you.</h3>
+        </div>
+        <!-- ─── Uper Half Ends ──────────────────────────────────── -->
+        
+        <!-- ─── Lovwer Half start ─────────────────────────────────────────────────── ✣ ─ -->
+        <div class="lower flex flex-col justify-around items-center grow p-3">
+            <!-- ─── Text ────────────────────────────────── ✣ ─ -->
+            <div class="desc text-center">card3 ipsum dolor sit amet consectetur, adipisicing elit. Ab nostrum architecto minus voluptatem!</div>
+            <!-- ─── Dots ────────────────────────────────────────── ✣ ─ -->
+            <div class="dot_cont flex gap-1">
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+                <div class="w-6 h-2 rounded-full bg-blue-600"></div>
+            </div>
+            <!-- ─── Buttons ─────────────────────────────────────── ✣ ─ -->
+            <div class="flex justify-center gap-2">
+                <button class="w-28 h-11 bg-slate-400 text-white rounded-full skipBtn">Skip</button>
+                <button class="w-28 h-11 bg-blue-600 text-white rounded-full  startBtn">Start</button>
+            </div>
+            <!-- ─── Lower Half Ends ─────────────────────────────── ✣ ─ -->
+        </div>
+        <!-- ─── Card 3 Ends ───────────────────────────────────────────────── -->
+    </div>
+    <!-- ─────────────────────────────────────────────────────────────────── ✣ ─ -->
+    
+    
+    <!-- ─── Javascript ──────────────────────────────────────────────────── ✣ ─ -->
+    <script>
+        const cards = document.querySelectorAll('.card');
+        let currentCardIndex = 0;
+        
+        function showCard(index) {
+            if (index < 0 || index >= cards.length) {
+                return;
+            }
+            
+            cards[currentCardIndex].classList.add('hidden');
+            cards[index].classList.remove('hidden');
+            
+            currentCardIndex = index;
+        }
+        
+        function showNextCard() {
+            if (currentCardIndex < cards.length - 1) {
+                showCard(currentCardIndex + 1);
+            }
+        }
+        function showFirstCard() {
+            if (currentCardIndex < cards.length - 1) {
+                showCard(currentCardIndex - 2);
+            }
+        }
+        
+        // Add event listeners to all "Next" buttons
+        const nextButtons = document.querySelectorAll('.next-button');
+        const lastButton = document.querySelectorAll('.startBtn');
+        
+        if (nextButtons) {
+            nextButtons.forEach((button) => {
+                button.addEventListener('click', showNextCard);
+            });
+        }
+        if (lastButton) {
+            lastButton.addEventListener('click', showFirstCard);
+        }
+    </script>                  
 </body>
 </html>
 
