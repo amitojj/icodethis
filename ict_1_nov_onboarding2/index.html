@@ -106,7 +106,7 @@
             <!-- ─── Buttons ─────────────────────────────────────── ✣ ─ -->
             <div class="flex justify-center gap-2">
                 <button class="w-28 h-11 bg-slate-400 text-white rounded-full skipBtn">Skip</button>
-                <button class="w-28 h-11 bg-blue-600 text-white rounded-full  startBtn">Start</button>
+                <button class="w-28 h-11 bg-blue-600 text-white rounded-full" id="startBtn">Start</button>
             </div>
             <!-- ─── Lower Half Ends ─────────────────────────────── ✣ ─ -->
         </div>
@@ -137,22 +137,21 @@
             }
         }
         function showFirstCard() {
-            if (currentCardIndex < cards.length - 1) {
-                showCard(currentCardIndex - 2);
-            }
+            
         }
         
         // Add event listeners to all "Next" buttons
         const nextButtons = document.querySelectorAll('.next-button');
-        const lastButton = document.querySelectorAll('.startBtn');
-        
         if (nextButtons) {
             nextButtons.forEach((button) => {
                 button.addEventListener('click', showNextCard);
             });
         }
+        const lastButton = document.getElementById('startBtn');
         if (lastButton) {
-            lastButton.addEventListener('click', showFirstCard);
+            lastButton.addEventListener('click', function() {
+                showCard(0);
+            });
         }
     </script>                  
 </body>
