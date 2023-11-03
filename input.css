@@ -3,22 +3,35 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-3xl font-semibold;
-    }
-    h2 {
-        @apply text-2xl;
-    }
+  h1 {
+    @apply text-3xl font-semibold uppercase;
+  }
+  h2 {
+    @apply text-2xl uppercase;
+  }
+  h3 {
+    @apply text-xl uppercase;
+  }
+  h4 {
+    @apply text-lg uppercase;
+  }
+  h5 {
+    @apply text-sm uppercase;
+  }
+  h6 {
+    @apply text-xs uppercase;
+  }
+
 }
 
 @layer components {
-    .input-primary {
-        @apply px-3 py-2 mt-2 mb-2 text-gray-700 border border-gray-400 rounded focus:border focus:border-sky-400 focus:outline-none focus:shadow-[0_0_4px_4px] focus:shadow-sky-400;
-    }
+  .input-primary {
+    @apply px-3 py-2 mt-2 mb-2 text-gray-700 border border-gray-400 rounded focus:border focus:border-sky-400 focus:outline-none focus:shadow-[0_0_4px_4px] focus:shadow-sky-400;
+  }
 }
 
 @layer utilities {
-    .fancy-border {
-         border-radius: 0% 0% 43% 57% / 0% 0% 25% 32%;
-    }
+  .fancy-border {
+    border-radius: 0% 0% 43% 57% / 0% 0% 25% 32%;
+  }
 }
