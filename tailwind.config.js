@@ -3,6 +3,16 @@ module.exports = {
   content: ["**/*.html"],
   theme: {
     extend: {
+      colors: {
+        mbg: "#27292B",
+        bg1: "#2F3133",
+        bg2: "#232526",
+        bbg: "#1C1E1F",
+        tc: "#F6C73E",
+        oc1: "#05AAF6",
+        oc2: "#AA01FF",
+        oc3: "#F40058",
+      },
       borderRadius: {
         fancy: "0% 0% 43% 57% / 0% 0% 25% 32%",
       },
@@ -13,7 +23,7 @@ module.exports = {
         pop: "Poppins ,sans-serif",
       },
       boxShadow: {
-        "3xl": "7px 7px 23px 2px #757575",
+        "3xl": "7px 7px 23px 2px #111111",
       },
       animation: {
         beat: "beat  0.5s linear infinite alternate",
