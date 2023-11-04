@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mbg: "#27292B",
-        bg1: "#2F3133",
-        bg2: "#232526",
-        bbg: "#1C1E1F",
-        tc: "#F6C73E",
-        oc1: "#05AAF6",
-        oc2: "#AA01FF",
-        oc3: "#F40058",
+        mbg: "#FE8D76",
+        bg1: "#354751",
+        bg2: "#fff",
+        bg3: "#eef2f3",
+        bg4: "#42545e",
+        bg5: "#273841",
+        bg6: "#d7dcdf",
+        tc1: "#2f3739",
+        tc2: "#fff",
+        cout: "#666",
       },
       fontSize: {
         "2xs": "10px",
@@ -24,6 +26,7 @@ module.exports = {
         nun: "Nunito, sans-serif",
         mon: "Montserrat, sans-serif",
         pop: "Poppins ,sans-serif",
+        int: "Inter , sans-serif",
       },
       boxShadow: {
         "3xl": "7px 7px 23px 2px #111111",
@@ -78,5 +81,17 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const appearanceUtilities = {
+        ".no-appearance": {
+          "-webkit-appearance": "none",
+          "-moz-appearance": "none",
+          appearance: "none",
+        },
+      };
+
+      addUtilities(appearanceUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

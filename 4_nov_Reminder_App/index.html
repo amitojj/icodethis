@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900;1000&family=Inter:wght@400;500;600;700;800;900;1000&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reminder App</title>
+  </head>
+  <body class="min-h-screen m-0 bg-mbg grid place-items-center">
+    <main class="my-8 mx-0 grid grid-cols-[240px_400px] grid-rows-[570px]">
+      <input
+        type="radio"
+        id="menu1"
+        name="menu"
+        class="no-appearance absolute"
+      />
+      <input
+        type="radio"
+        id="menu2"
+        name="menu"
+        class="no-appearance absolute"
+      />
+      <input
+        type="radio"
+        id="menu3"
+        name="menu"
+        class="no-appearance absolute"
+        checked=""
+      />
+      <input
+        type="radio"
+        id="menu4"
+        name="menu"
+        class="no-appearance absolute"
+      />
+      <nav class="bg-bg1 flex flex-col items-center">
+        <input
+          class="search_input"
+          type="search"
+          placeholder="Search"
+          autocomplete="off"
+        />
+        <ul class="menu_list">
+          <li>
+            <label for="menu1" class="cursor-pointer">
+              Reminders
+              <span>3</span>
+            </label>
+          </li>
+          <li>
+            <label for="menu2" class="cursor-pointer">
+              To do list
+              <span>4</span>
+            </label>
+          </li>
+          <li>
+            <label for="menu3" class="cursor-pointer">
+              Shopping list
+              <span>7</span>
+            </label>
+          </li>
+          <li>
+            <label for="menu4" class="cursor-pointer">
+              Other
+              <span>0</span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="reminders_section">
+        <div class="heading_wrapper">
+          <h2>Reminders</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="reminder"
+              id="reminder0"
+            />
+            <label for="reminder0"> Take out rubbish </label>
+          </li>
+        </ul>
+        <div class="heading_wrapper">
+          <h2>Important</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="important"
+              id="important0"
+              checked=""
+            />
+            <label for="important0"> Feed the cats </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="important"
+              id="important1"
+            />
+            <label for="important1"> Do shopping </label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="todo_section">
+        <div class="heading_wrapper">
+          <h2>To do list</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="todo"
+              id="todo0"
+              checked=""
+            />
+            <label for="todo0"> Wake up </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="todo"
+              id="todo1"
+              checked=""
+            />
+            <label for="todo1"> Eat </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="todo"
+              id="todo2"
+            />
+            <label for="todo2"> iCodeThis </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="todo"
+              id="todo3"
+            />
+            <label for="todo3"> Angular practice </label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="shopping_section">
+        <div class="heading_wrapper">
+          <h2>Groceries</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries0"
+              checked=""
+            />
+            <label for="groceries0"> Butter </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries1"
+              checked=""
+            />
+            <label for="groceries1"> Orange juice </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries2"
+            />
+            <label for="groceries2"> Cheese </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries3"
+              checked=""
+            />
+            <label for="groceries3"> Chocolate </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries4"
+            />
+            <label for="groceries4"> Corn flakes </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries5"
+            />
+            <label for="groceries5"> Potatoes </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="no-appearance absolute focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+              name="groceries"
+              id="groceries6"
+            />
+            <label for="groceries6"> Avocado </label>
+          </li>
+        </ul>
+        <div class="heading_wrapper">
+          <h2>Electronics</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="heading_wrapper">
+          <h2>Books</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="heading_wrapper">
+          <h2>Car</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="other_section">
+        <div class="heading_wrapper">
+          <h2>Other</h2>
+          <button
+            class="options_btn focus-visible:outline focus-visible:outline-4 focus-visible:outline-cout focus-visible:outline-offset-2"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#838788"
+                fill-rule="evenodd"
+                d="M12 3a2 2 0 10-4 0 2 2 0 004 0zm-2 5a2 2 0 110 4 2 2 0 010-4zm0 7a2 2 0 110 4 2 2 0 010-4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
