@@ -13,6 +13,9 @@ module.exports = {
         oc2: "#AA01FF",
         oc3: "#F40058",
       },
+      fontSize: {
+        "2xs": "10px",
+      },
       borderRadius: {
         fancy: "0% 0% 43% 57% / 0% 0% 25% 32%",
       },
